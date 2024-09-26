@@ -1,0 +1,80 @@
+
+구글 스콜라 학술검색 (논문검색사이트) - 강의자료없음
+https://scholar.google.co.kr/schhp?hl=ko&as_sdt=0,5
+
+실습 ------------------------------------------------------------------------------------------------------
+
+내가 원하는 키워드를 검색 했을때,
+상위 50개 논문을 리스트업하는 프로그램
+(단, 최근 년내 발표된 눈문에 한합니다.)
+
+keyword = education > 마음대로 바꿀수 있어야함
+year = 2022~2024
+
+https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=education&btnG=
+
+
+https://scholar.google.co.kr/scholar?q=education&hl=ko&as_sdt=0%2C5&as_ylo=2022&as_yhi=2024 =
+https://scholar.google.co.kr/scholar?start=0&q=education&hl=ko&as_sdt=0,5&as_ylo=2022&as_yhi=2024
+
+https://scholar.google.co.kr/scholar?start=10&q=education&hl=ko&as_sdt=0,5&as_ylo=2022&as_yhi=2024
+
+https://scholar.google.co.kr/scholar?start=20&q=education&hl=ko&as_sdt=0,5&as_ylo=2022&as_yhi=2024
+
+page number > start=10 
+
+keyword = education
+ylo = yyyy - 2   # as_ylo
+yhi = yyyy   # as_yhi
+
+start = (page - 1) * 10
+
+url = f'https://scholar.google.co.kr/scholar?start={start}&q=education&hl=ko&as_sdt=0,5&as_ylo={ylo}&as_yhi={yhi}'
+
+-------------------- 구글 크롤러
+
+크롤링을 많이 하면 구글에서 막힌다. 실습할때 경험함..
+한 결과물은 보안이 중요하다. 따로 메일로 올리던지의 방법으로 한다.
+크롤링을 허용한 웹사이트 안한 웹사이트가 있다.
+
+나가는 크롤러 이다.
+https://www.google.com/robots.txt
+
+커스텀크롤러 : 자체적으로 만든 것
+Disallow(허용안함) : 대부분의 검색결과는 크롤링을 허용하지 않는다. 
+Allow(허용) : 크롤링을 허용하는 경로 etc...
+
+
+---------------------- 네이버
+Disallow 모든 페이지를 크롤러 허용 안함.
+
+-------------------------------- 실습 구글 news
+
+참고 url
+https://www.google.com/search?sca_esv=986cfd32cb66a37f&sca_upv=1&sxsrf=ADLYWIJH6Kgmxn82TycG8_e7KHMXIk-Dkw:1717118685068&q=%EC%95%84%EB%A7%88%EC%A1%B4%EB%8B%B7%EC%BB%B4&tbm=nws&source=lnms&prmd=sinvmbz&sa=X&ved=2ahUKEwiZzYrK3baGAxXoevUHHS2sBDMQ0pQJegQIHRAB&biw=1041&bih=886&dpr=1
+
+
+*********************************************************************************
+** class 에서 띄어쓰기는 . 으로 구분하여 python 소스 작성한다.
+soup에서 해당 url 하는 정보를 확인할 수 있다.
+
+
+*********************************************************************************
+
+url 경로는 상대경로 / 는  현재경로에서 다른곳으로 가는 것이다.
+
+q= 부터는 검색어 경로로 보면 안된다.
+
+/url?q=
+url 이 주소고 q 쿼리를 하겠다 그냥 옵션
+url에 검색을 하는 개념?
+= http 리퀘스트라는 규격을 알아야한다.
+
+다중 분산 접속 - Doss
+
+네이버 증권 페이지 크롤링 하기 에서 국내증시 에서 거래상위 표
+https://finance.naver.com/sise/sise_quant.naver 기준
+
+
+유저에이전트 사이트
+아발론 사이트 https://m.avalon.co.kr/check.html

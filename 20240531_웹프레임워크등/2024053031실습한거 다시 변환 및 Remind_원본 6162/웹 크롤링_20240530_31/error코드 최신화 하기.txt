@@ -1,0 +1,12 @@
+
+
+_20240531
+error
+
+자료형이 bs4.element.Tag
+'NoneType' object is not callable
+
+크롤링 할때 주의할 점
+# 자주돌리지말기 구글에서 막음 5/31일 경험
+content = requests.get(url).content # url를 받아서 content 만들고 
+soup = BeautifulSoup(content, 'html.parser')

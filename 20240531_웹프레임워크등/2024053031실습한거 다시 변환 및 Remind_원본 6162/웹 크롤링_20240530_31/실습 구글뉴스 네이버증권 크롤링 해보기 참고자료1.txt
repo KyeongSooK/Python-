@@ -1,0 +1,43 @@
+-------------- 구글 아마존 뉴스 1페이지 크롤링 해보기--------------------
+
+1페이지
+https://www.google.com/search?sca_esv=986cfd32cb66a37f&sca_upv=1&sxsrf=ADLYWIJH6Kgmxn82TycG8_e7KHMXIk-Dkw:1717118685068&q=%EC%95%84%EB%A7%88%EC%A1%B4%EB%8B%B7%EC%BB%B4&tbm=nws&source=lnms&prmd=sinvmbz&sa=X&ved=2ahUKEwiZzYrK3baGAxXoevUHHS2sBDMQ0pQJegQIHRAB&biw=1041&bih=886&dpr=1
+
+==
+
+https://www.google.com/search?q=%EC%95%84%EB%A7%88%EC%A1%B4%EB%8B%B7%EC%BB%B4&sca_esv=986cfd32cb66a37f&sca_upv=1&tbm=nws&prmd=sinvmbz&sxsrf=ADLYWIKlohgWLHxbMncuEQ_zPfNhGPFD6Q:1717118864076&ei=kCdZZsKXBO-Vvr0Pgbu62AM&start=0&sa=N&ved=2ahUKEwjCn7if3raGAxXviq8BHYGdDjsQ8tMDegQIBBAE&biw=1041&bih=886&dpr=1
+
+2페이지
+https://www.google.com/search?q=%EC%95%84%EB%A7%88%EC%A1%B4%EB%8B%B7%EC%BB%B4&sca_esv=986cfd32cb66a37f&sca_upv=1&tbm=nws&prmd=sinvmbz&sxsrf=ADLYWIKlohgWLHxbMncuEQ_zPfNhGPFD6Q:1717118864076&ei=kCdZZsKXBO-Vvr0Pgbu62AM&start=10&sa=N&ved=2ahUKEwjCn7if3raGAxXviq8BHYGdDjsQ8tMDegQIBBAE&biw=1041&bih=886&dpr=1
+
+3페이지
+https://www.google.com/search?q=%EC%95%84%EB%A7%88%EC%A1%B4%EB%8B%B7%EC%BB%B4&sca_esv=986cfd32cb66a37f&sca_upv=1&tbm=nws&prmd=sinvmbz&sxsrf=ADLYWIKhj9NV_AkEL-vsiiJ_K_JxzVudcA:1717119374972&ei=jilZZrP3Oqff1e8P-JSQgAE&start=20&sa=N&ved=2ahUKEwiz9oaT4LaGAxWnb_UHHXgKBBA4ChDy0wN6BAgEEAc&biw=1041&bih=886&dpr=1
+
+제목 본문 내용 언론사이름
+
+/url?q=
+url 이 주소고 q 쿼리를 하겠다 그냥 옵션
+url에 검색을 하는 개념?
+= http 리퀘스트라는 규격을 알아야한다.
+
+
+-------------- 구글 아마존 뉴스 1페이지 크롤링 해보기 --------------------
+
+https://search.pstatic.net/sunny/?src=http%3A%2F%2Fwww.koreaarttv.com%2Fwys2%2Ffile_attach%2F2024%2F04%2F08%2F1712569809-90-org.jpg&type=sc960_832
+
+https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimage.utoimage.com%2Fpreview%2Fcp868526%2F2016%2F11%2F201611023141_800.jpg&type=a340
+
+-------------------- 네이버 증권 페이지 크롤링 하기 -----------------------
+
+https://finance.naver.com/sise/sise_quant.naver 기준 코스피 100row
+
+https://finance.naver.com/sise/sise_quant.naver?sosok=0
+
+https://finance.naver.com/sise/sise_quant.naver?sosok=1
+
+input값 1, 2 
+
+다른방법 for문 해보기
+
+
+-------------------- 네이버 증권 페이지 크롤링 하기 -----------------------

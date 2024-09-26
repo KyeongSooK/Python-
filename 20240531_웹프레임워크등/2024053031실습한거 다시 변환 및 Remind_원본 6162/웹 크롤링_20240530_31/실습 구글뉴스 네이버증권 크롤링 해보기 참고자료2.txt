@@ -1,0 +1,15 @@
+------------------ 구글 아마존 뉴스 1페이지 크롤링 해보기 --------------------
+
+1페이지 검색당 soup
+class="Gx5Zad fP1Qef xpd EtOod pkphOe"><a data-ved="2ahUKEwj9yPOA5raGAxUanK8BHTcONJ0QxfQBegQIAhAC" href="/url?q=https://m.mt.co.kr/renew/view_amp.html%3Fno%3D2024053104315746333&amp;sa=U&amp;ved=2ahUKEwj9yPOA5raGAxUanK8BHTcONJ0QxfQBegQIAhAC&amp;usg=AOvVaw3XNLUochpcrAfhuFHPxehE"><div class="egMi0 kCrYT"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">아마존 드론배송, 조종사 시야너머로 연방승인</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">머니투데이</div></div></div></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div class="BNeawe s3v9rd AP7Wnd">아마존이 드론 배송에 관한 연방정부의 추가 승인을 얻어 공중비행 배송서비스에 한걸음 더 다가섰다고 밝혔다. 30일(현지시간) 아마존은 기존 드론...<br/><span class="r0bn4c rQMQod">6시간 전</span></div></div></div></div></div></a></div></div><div><div>
+
+'아마존 드론배송, 조종사 시야너머로 연방승인
+머니투데이
+아마존이 드론 배송에 관한 연방정부의 추가 승인을 얻어 공중비행 배송서비스에 한걸음 더 다가섰다고 밝혔다. 30일(현지시간) 아마존은 기존 드론...
+6시간 전',
+
+이거는 한번만 start > restart 하면 안됨
+content = requests.get(url).content # url를 받아서 content 만들고 # 자주돌리지말기 구글에서 막음
+soup = BeautifulSoup(content, 'html.parser') # 
+
+-------------- 구글 아마존 뉴스 1페이지 크롤링 해보기 --------------------
