@@ -1,0 +1,59 @@
+20240619_DB STUDY 관련 설치
+
+postgresql
+
+https://www.postgresql.org/download/windows/
+
+Download the installer 클릭
+
+15.7 버전 Windows x86-64
+
+그냥 파일 이름 만들고 거기에 깐다?
+
+패스워드 @ 빼고 특수문자까지 가능 
+
+check 해제
+
+-----------------------------------------------------------------
+
+mongodb
+
+https://www.mongodb.com/
+
+PRODUCT > COMMUNITY EDITION > DOWNDOAD
+
+Version 6.0.15
+
+msi 으로 하고 
+
+next 하다가 설치방식은 xxx사용자 지정방식ㅌㅌ 말고 제공하는데로하기
+
+next 
+체크하고 필요한거임 그리고 next
+
+install 하기
+
+-----------------------------------------------------------------
+
+* 공통 확인하기  windows Powershell에서 NETSTAT -ano | SELECT-STRING "PID|5432|27017" 로 확인
+프로토콜  로컬 주소              외부 주소              상태            PID
+  TCP    0.0.0.0:5432           0.0.0.0:0              LISTENING       21636
+  TCP    127.0.0.1:27017        0.0.0.0:0              LISTENING       13656
+  TCP    [::]:5432              [::]:0                 LISTENING       21636
+
+dbeaver 설치
+
+https://dbeaver.io/download/
+
+Windows (installer)
+
+all users 로 설정 처음은 reset setting 체크안함 //////// 있으면 체크
+
+-----------------------------------------------------------------
+마지막 잘 설치되었는지 체크
+
+* 공통 확인하기  windows Powershell에서 NETSTAT -ano | SELECT-STRING "PID|5432|27017" 로 확인
+프로토콜  로컬 주소              외부 주소              상태            PID
+  TCP    0.0.0.0:5432           0.0.0.0:0              LISTENING       21636
+  TCP    127.0.0.1:27017        0.0.0.0:0              LISTENING       13656
+  TCP    [::]:5432              [::]:0                 LISTENING       21636

@@ -1,0 +1,19 @@
+db설치 21일꺼
+
+PGADMIN 실행 포스트그릴SQL 서버 위치 접근
+
+film actor filmactor 3개 기준
+
+dvdrental.zip 이거만 압축해제 안에 해제하지말기
+
+create 하고 
+
+sche마스 안에 현재 테이블 확인가능
+
+오른쪽클 restore 클릭
+
+파일경로는 다운로드 다운받은 기준
+
+sql 편집 확인 dbeaver
+
+PostgreSQL

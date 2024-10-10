@@ -1,0 +1,55 @@
+20240625_강의자료
+
+strings , lists, hashes, 
+
+hset 다수의키와밸류를 관리하는것
+
+HSET bike:1 model Deimos brand Ergonom type 'Enduro bikes' price 4972
+OK
+아니고
+HMSET bike:1 model Deimos brand Ergonom type 'Enduro bikes' price 4972
+OK
+키 밸류 키 밸류하다가 type(키) '밸류' 키 밸류
+
+**redis-cil 실습
+
+**Redis 홈페이지 해시문서로 되있음 옆리스트에서 보고싶은 
+https://redis.io/docs/latest/develop/data-types/hashes/ 
+
+참고자료
+https://www.happykoo.net/@happykoo/posts/48
+https://velog.io/@rlaghwns1995/Redis-%EA%B8%B0%EB%B3%B8%EC%A0%95%EB%A6%AC
+
+**몽고db 참고자료 > 셤에서 20000~40000 못찾..
+https://www.mongodb.com/docs/v6.0/tutorial/project-fields-from-query-results/#return-all-but-the-excluded-fields
+
+참고 자료 
+https://junhobaik.github.io/mongodb-basic-crud/
+
+ping
+keys
+keys *
+set "temp_key" "temp_value"
+get "temp_key"
+
+SET bike:1 Deimos
+GET bike:1
+
+mset bike:1 "Deimos" bike:2 "Ares" bike:3			-- mset 대소문자 안가림
+MSET bike:1 "Deimos" bike:2 "Ares" bike:3 "Vanth"
+
+mget bike:1 bike:2 bike:3
+DEL "bike:1"
+
+SET "bike:2" "Es"
+get "bike:2"
+
+APPEND "BIKE:2" "ES" 	get "BIKE:2"  >> "BIKE:2" < 키값은 대소문자 다르다.
+
+set "bike:2" "Es"
+get "bike:2"    // 값이 잘 들어갔는지 확인하는
+
+LPUSH bikes:repairs bike:1
+get bikes:repairs bike:1 에러?
+LPUSH bikes:repairs bike:1
+LPUSH bikes:repairs bike:2 여기부터 이미지로 확인
